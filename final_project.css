@@ -1,0 +1,369 @@
+.fauna-one-regular {
+  font-family: "Fauna One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  transition: all 0.3s ease-out;
+  font-family: "Fauna One", serif;
+}
+
+#launch {
+  height: 850px;
+}
+
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -5;
+  opacity: 40%;
+}
+
+.title {
+  font-family: "Fauna One", serif;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  top: 270px;
+}
+
+#quote {
+  font-size: 14px;
+  position: relative;
+}
+
+.author {
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 40px;
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+  padding: 15px;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
+
+h1:hover {
+  text-shadow: 0px 0px 25px rgba(255, 255, 255, 2);
+}
+
+h2:hover {
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
+
+a#email:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+.descriptors {
+  position: absolute;
+}
+
+
+#descriptors-left {
+  top: 280px;
+  left: 150px;
+}
+
+#descriptors-right {
+  top: 280px;
+  right: 150px;
+  text-align: right;
+}
+
+p.hidden {
+  display: none;
+  font-size: 12px;
+  margin: 0;
+  width: 200px;
+}
+
+.descriptors p:hover {
+  font-size: 19px;
+  margin: none;
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
+
+.descriptors p:hover + p.hidden {
+  display: inline-block;
+}
+
+#start {
+  font-size: 20px;
+  position: fixed;
+  top: 40px;
+  left: 80px;
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#start:hover {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10% 50% 50% 50%;
+}
+
+#dive-in {
+  font-size: 20px;
+  position: fixed;
+  top: 40px;
+  right: 80px;
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#dive-in:hover {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50% 10% 50% 50%;
+}
+
+#resume {
+  font-size: 20px;
+  position: fixed;
+  bottom: 40px;
+  left: 80px;
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#resume:hover {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50% 50% 50% 10%;
+}
+
+#contact {
+  font-size: 20px;
+  position: fixed;
+  bottom: 40px;
+  right: 80px;
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#contact:hover {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50% 50% 10% 50%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.down {
+  font-size: 100px;
+  color: transparent; /* Hide original symbol color */
+  position: relative;
+  opacity: 80%;
+  padding-left: 25px;
+  padding-right: 25px; 
+  padding-bottom: 5px; 
+}
+
+
+.down::before {
+  content: "\25BE"; /* Unicode for a star symbol */
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  padding-left: 25px;
+  padding-right: 25px;  
+  padding-bottom: 5px; 
+}
+
+.down:hover {
+  opacity: 100%;
+  cursor: pointer;
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+}
+
+#second {
+  height: 850px;
+  font-family: "Fauna One", serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.text:hover h2 {
+  font-size: 30px;
+}
+
+.text:hover {
+  border: solid rgb(93, 93, 93) 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#resume-section {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Fauna One", serif;
+}
+
+.resume-piece {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.resume-piece-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resume-content {
+  margin: 10px;
+  border: solid 1.5px gray;
+  padding: 20px;
+  border-radius: 12px;
+
+}
+
+.resume-content p, .resume-content ul {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resume-content ul {
+  padding-left: 20px;
+}
+
+.resume-content li {
+  list-style-type: circle;
+}
+
+h3, .resume-piece-title, p, li {
+  font-family: "Fauna One", serif;
+}
+
+a#news-link {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+}
+
+a.writing-link {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+div#skills .resume-content {
+  width: 200px;
+}
+
+div#resume-group {
+  display: flex;
+  flex-direction: row;
+}
+
+div#resume-column {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin-top: 8px;
+}
+
+#contact-section {
+  height: 850px;
+  font-family: "Fauna One", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-form {
+  width: 600px;
+}
+
+div.input {
+  position: relative;
+  margin: 10px;
+}
+
+label {
+  font-size: 12px;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+}
+
+input {
+  appearance: auto;
+  background: none;
+  opacity: 100%;
+  border: solid 1.5px black;
+  border-radius: 12px;
+  width: 550px;
+  height: 60px;
+  padding: 15px;
+}
+
+input:hover, textarea:hover {
+  cursor: pointer;
+}
+
+textarea {
+  appearance: auto;
+  background: none;
+  opacity: 100%;
+  border: solid 1.5px black;
+  border-radius: 12px;
+  width: 550px;
+  height: 90px;
+  padding: 15px;
+}
+
+.submit-button {
+  align-items: center;
+  background: none;
+  opacity: 100%;
+  border: 1px black solid;
+  border-radius: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+.submit-button:hover {
+  border-radius: 100px 100px 10% 100px;
+  cursor: pointer;
+}
+
+p#under-form {
+  margin-top: 25px;
+  font-size: 13px;
+}

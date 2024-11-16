@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Work</title>
+    <meta>
+    <link rel="icon" href="media/logo4.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">    
+    <style>
+      .fauna-one-regular {
+        font-family: "Fauna One", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      * {
+        font-family: "Fauna One", serif;
+        transition: all 0.1s ease-out;
+      }
+
+      body {
+        padding-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -5;
+        opacity: 20%;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .navigation a {
+        margin-left:40px;
+      }
+
+      header h2 {
+        font-size: 19px;
+        padding: 9px;
+      }
+
+      header h2:hover, header p:hover {
+        text-shadow: 0px 0px 15px rgba(80, 80, 80, 0.5)
+      }
+
+      /* header p {
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 35px;
+        border-radius: 50%;
+        padding: 15px;
+        text-shadow: 0px 0px 15px rgba(80, 80, 80, 0.6);
+      } */
+
+      h1:hover {
+        text-shadow: 0px 0px 25px rgba(80, 80, 80, 2);
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .row:hover h3.row-title {
+        text-shadow: 0px 0px 15px rgba(80, 80, 80, 0.5)
+      }
+
+      h3.row-title {
+        width: 96%;
+        text-align: left;
+        font-size: 17px;
+      }
+
+      .scroll-container {
+        overflow-x: scroll;
+        width: 1400px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(240, 248, 255, 0.726);
+        border-radius: 40px;
+        padding: 15px;
+        padding-bottom: 5px;
+      }
+
+      /* .scroll-container::-webkit-scrollbar {
+        width: 800px;
+        height: 10px;
+      }
+
+      .scroll-container::-webkit-scrollbar-thumb {
+        background-color: darkgray;
+        border-radius: 4px;
+      } */
+
+      .scroll-block {
+        display: flex;
+        position: relative;
+        left: 0px;
+        margin: 10px;
+      }
+
+      .block-preview {
+        text-wrap: wrap;
+        width: 330px;
+      }
+
+      .block-preview:hover img {
+        border-radius: 0px;
+      }
+
+      a {
+        text-wrap: wrap;
+        text-decoration: none;
+        color: black;
+      }
+
+      .image-wrapper {
+        overflow-y: hidden;
+        overflow-x: hidden;
+        object-fit: cover;
+      }
+
+      img {
+        vertical-align: top;
+        width: 285px;
+        height: 179px;
+        border: solid gray 1px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+      }
+
+      .date {
+        font-size: 14px;
+      }
+
+      h3.title {
+        font-size: 16px;
+        width: 300px;
+      }
+
+      .scrollx {
+        cursor: pointer;
+        overflow-x: auto;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <video autoplay muted loop>
+      <source type="video/mp4" src="media/beach.mp4">
+    </video>
+    <header>
+      <a href="homepage.html" target="_blank"><h2>ELINOR AMIR-LOBEL</h2></a>
+      <div class="navigation">
+        <a href="aboutme.html" target="_blank"><p>about me</p></a>
+        <a href="homepage.html#resume-section" target="_blank"><p>my resume</p></a>
+        <a id="email" href="mailto:amirlobe@usc.edu"><p>amirlobe@usc.edu</p></a>
+      </div>
+    </header>
+    <main>
+      <div class="row" id="writing">
+        <h3 class="row-title">writing samples</h3>
+        <div class="carousel">
+          <div class="scroll-container">
+            <div class="scroll-block">
+              <div class="block-preview">
+                <a href="media/Mock Intelligence Analysis (1).pdf">
+                  <div class="image-wrapper">
+                    <img src="media/img-mock-int.png" alt="Mock Intelligence Analysis">
+                  </div>
+                  <span class="date"><p><em>June 3, 2024</em></p></span>
+                  <h3 class="title">Mock Intelligence Analysis: <em>Russian Military Intentions</em></h3>
+                </a>
+              </div>
+            </div> <!-- .scroll-block -->
+            <div class="scroll-block">
+              <div class="block-preview">
+                <a href="media/Mock Policy Memo (withSources).pdf">
+                  <div class="image-wrapper">
+                    <img src="media/img-mock-memo.png" alt="Mock Policy Memo">
+                  </div>
+                  <span class="date"><p><em>June 4, 2024</em></p></span>
+                  <h3 class="title">Mock Policy Memo: <em>Countering China's Cyber Threat</em></h3>
+                </a>
+              </div>
+            </div> <!-- .scroll-block -->
+            <div class="scroll-block">
+              <div class="block-preview">
+                <a href="media/IR 304 Final Paper.pdf">
+                  <div class="image-wrapper">
+                    <img src="media/img-final-paper.png" alt="Final Research Paper">
+                  </div>
+                  <span class="date"><p><em>June 25, 2024</em></p></span>
+                  <h3 class="title">Research Paper: <em>Private Intelligence Services</em></h3>
+                </a>
+              </div>
+            </div> <!-- .scroll-block -->
+            <div class="scroll-block">
+              <div class="block-preview">
+                <a href="media/storywriting sample_ world sim (1).pdf">
+                  <div class="image-wrapper">
+                    <img src="media/img-narrative.png" alt="Final Research Paper">
+                  </div>
+                  <span class="date"><p><em>November 10, 2022</em></p></span>
+                  <h3 class="title">Non-Fiction Narrative: <em>International Women's Day</em></h3>
+                </a>
+              </div>
+            </div> <!-- .scroll-block -->
+          </div> <!-- .scroll-container -->
+          <div class="scrollx">
+            <div class="scrollbar-inner" style="width: 1170px;"></div>
+          </div>
+        </div>
+      </div> <!-- row -->
+      <div class="row" id="codes">
+        <h3 class="row-title">coding samples</h3>
+        <div class="carousel">
+          <div class="scroll-container">
+            <div class="scroll-block">
+              <div class="block-preview">
+                <a href="media/CensusAPI.zip">
+                  <div class="image-wrapper">
+                    <img src="media/img-census1.png" alt="CensusAPI Code">
+                  </div>
+                  <span class="date"><p><em>October 5, 2024</em></p></span>
+                  <h3 class="title">Python—Web Requests + JSON + CSV: <em>Census Data API Scraper</em></h3>
+                </a>
+              </div>
+            </div> <!-- .scroll-block -->
+            <div class="scroll-block">
+              <div class="block-preview">
+                <a href="homepage.html" target="_blank">
+                  <div class="image-wrapper">
+                    <img src="media/img-website-source2.png" alt="Website Screenshot">
+                  </div>
+                  <span class="date"><p><em>November 10, 2024</em></p></span>
+                  <h3 class="title">HTML/CSS: <em>Personal Website, My Work, About Me</em></h3>
+                </a>
+              </div>
+            </div> <!-- .scroll-block -->
+          </div> <!-- .scroll-container -->
+          <!-- <div class="scrollx">
+            <div class="scrollbar-inner" style="width: 1170px;"></div>
+          </div> -->
+        </div>
+      </div> <!-- row -->
+    </main>
+  </body>
+</html>

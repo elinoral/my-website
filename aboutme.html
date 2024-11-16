@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <meta>
+    <link rel="icon" href="media/logo4.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fauna+One&display=swap" rel="stylesheet">    
+    <style>
+      .fauna-one-regular {
+        font-family: "Fauna One", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      * {
+        font-family: "Fauna One", serif;
+        transition: all 0.1s ease-out;
+      }
+
+      body {
+        padding-bottom: 10px;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -5;
+        opacity: 50%;
+      }
+      header {
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .navigation a {
+        margin-left:40px;
+      }
+
+      header h2 {
+        font-size: 19px;
+      }
+
+      header h2:hover, header p:hover {
+        text-shadow: 0px 0px 15px rgba(80, 80, 80, 0.5)
+      }
+
+      .wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-top: 20px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-left: 20px;
+        justify-content: space-between;
+      }
+
+      .right {
+        width: 70%;
+        height: 720px;
+        margin: 20px;
+        margin-top: 0px;
+      }
+
+      .box {
+        border: solid 1.5px gray;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      .title {
+        margin-top: 0px;
+      }
+
+      .box#description {
+        height: 100%;
+      }
+
+      #description p {
+        margin-top: 20px;
+      }
+
+      .box#photo {
+        padding: 0px;
+        height: 404px;
+        margin-bottom: 20px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        object-fit: cover;
+        position: relative;
+      }
+
+      .box#photo img {
+        position: absolute;
+        top: -50px;
+      }
+
+      img {
+        width: 100%;
+        transform: scale(1.1);
+      }
+
+      .box#interests {
+        height: 130px;
+        margin-bottom: 20px;
+      }
+
+      .box#links {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      a.external-link img {
+        height: 70px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="homepage.html" target="_blank"><h2>ELINOR AMIR-LOBEL</h2></a>
+      <div class="navigation">
+        <a href="mywork.html" target="_blank"><p>my work</p></a>
+        <a href="homepage.html#resume-section" target="_blank"><p>my resume</p></a>
+        <a id="email" href="mailto:amirlobe@usc.edu"><p>amirlobe@usc.edu</p></a>
+      </div>
+    </header>
+    <video autoplay muted loop>
+      <source type="video/mp4" src="media/birds4.mp4">
+    </video>
+    <!-- <p id="quote"><em>What was good was having an intelligence but not understanding... like having madness without being crazy.</em></p>
+    <p class="author">— Clarice Lispector</p> -->
+    <div class="wrapper">
+      <div class="left">
+        <div class="photo">
+          <div class="box" id="photo"><img id="background" src="media/photo3.png" alt=""></div>
+        </div>
+        <div class="interests">
+          <div class="box" id="interests">
+            <h3 class="title">interests</h3>
+            <p>In my free time you might find me reading a Lord of the Rings dictionary, walking the length of the city, watching the Great British Baking Show, or kickboxing in the gym.</p>
+          </div>
+        </div>
+        <div class="links">
+          <div class="box" id="links">
+            <a href="https://linkedin.com/in/elinor-amir-lobel-43585727b" target="_blank" class="external-link"><img src="media/linkedin.png" alt=""></a>
+            <a href="https://github.com/elinoral/elinoral.github.io" target="_blank" class="external-link"><img src="media/github.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="box" id="description">
+          <h3 class="title">about me</h3>
+          <p>I am a USC student majoring in Intelligence and Cyber Operations (an interdisciplinary study of Computer Science, Cybersecurity, Digital Forensics, International Relations, and Conflict Resolution), with a minor in Web Development, as well as Human Security and Geospatial Intelligence. At the intersection of these many fields, my goal is to apply measurable strategy and a deep understanding of global workings to technological advancement and improving quality of life for underrepresented groups, harnessing practical tools for real-world outcomes. I am a curious learner, energetic collaborator, and innovative problem solver uniquely positioned to succeed in roles which require a multifaceted, multi-perspective approach to special challenges.</p>
+          <p><em>Curious Learner:</em> I have conducted research in neuroscience, cyber compliance, and national intelligence and enjoy taking methodological approaches to analyzing real-world data. In my research, I frequently ask questions that challenge existing findings and explore new angles for examining problems. Over the summer of 2023, I attended the Future of Privacy Forum in Middleburg, Virginia and the AI for Good Global Conference in Geneva where I deepened my knowledge and understanding of both emerging technologies and their social, legal, and ethical implications.</p>
+          <p><em>Energetic Collaborator:</em> Over summer 2024, I worked at Fiverr in Tel Aviv, Israel, where I joined a team working to integrate Artificial Intelligence applications to both user-facing and internal software. I agilely switched roles within the team by performing competitive analyses, harnessing psychological insights, doing active research, and compiling large datasets which served as core platform components. I built and presented a case for a new AI application, working with different team leaders across the company, from the legal and financial departments, to verticals managers and the Chief Behavioral Officer.</p>
+          <p><em>Innovative Problem Solver:</em> In my second year at USC I worked as a learning assistant for a Programming in Python course, spending hours parsing students’ codes for errors and helping solve problems presented to me in class. While the work was repetitive at times, I never felt bored because every problem required a unique solution and challenged me in new and interesting ways. My favorite courses are those which present me with real-world cases which I must solve intelligently and quickly. I thrive when able to blend creativity with practical skill to come up with unexpected solutions.</p>
+          <p>When it comes to technology, I am most interested in the human elements of development and innovation, from intention to inception. Having grown up with several mobility challenges, immune disorders, and congenital hearing loss, which was recently surgically corrected in full, I know intimately the power that good, thoughtful technology can have on one’s quality of life and I want to be part of a future that pushes accessible design and technology even further.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
